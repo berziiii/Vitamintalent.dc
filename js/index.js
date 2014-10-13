@@ -1,68 +1,85 @@
-$(document).ready(function(){
-	var html = '';
-	// The for loop below is just incase I cannot figure out how to pull an API for a google doc. 
-	// any suggestions on how to do a API for a google doc?? Did some research but nothing is clear and cut...
-	var creatives = [
-		{
-			image:'';
-			name: '',
-			title:'',
-			blurb:'',
-		},{
-			image:'';
-			name: '',
-			title:'',
-			blurb:'',
-		},{
-			image:'';
-			name: '',
-			title:'',
-			blurb:'',
-		}
-		//etc....for the number of creatives posted. 
-	];
 
-//layout of section could change a bit but this is what I had in mind. 
+var html = '';
+var creatives = [
+		{
+			name: 'Brian',
+			title:'Recruiter',
+			blurb:'Lorem ipsum dolor sit amet, dicam intellegebat vel ad, cu per facer tantas repudiandae. Mea ludus nonumes elaboraret ne. Ea alterum fuisset suscipiantur sit, utinam copiosae et eum. Pro in eripuit erroribus, et sea ridens tritani, his choro nullam dissentiunt et. Ad sea amet laboramus, ad eum altera suscipit. Nec natum audire oblique ad, ius tota periculis ad, tale periculis sed ex. In sea dico justo expetenda, vel quod clita comprehensam ex, vel sint oporteat ut.',
+		},{
+			name: 'Wade',
+			title:'Responsive Guru',
+			blurb:'Lorem ipsum dolor sit amet, dicam intellegebat vel ad, cu per facer tantas repudiandae. Mea ludus nonumes elaboraret ne. Ea alterum fuisset suscipiantur sit, utinam copiosae et eum. Pro in eripuit erroribus, et sea ridens tritani, his choro nullam dissentiunt et. Ad sea amet laboramus, ad eum altera suscipit. Nec natum audire oblique ad, ius tota periculis ad, tale periculis sed ex. In sea dico justo expetenda, vel quod clita comprehensam ex, vel sint oporteat ut.',
+		},{
+			name: 'Ryan',
+			title:'Hard Core Programmer',
+			blurb:'Lorem ipsum dolor sit amet, dicam intellegebat vel ad, cu per facer tantas repudiandae. Mea ludus nonumes elaboraret ne. Ea alterum fuisset suscipiantur sit, utinam copiosae et eum. Pro in eripuit erroribus, et sea ridens tritani, his choro nullam dissentiunt et. Ad sea amet laboramus, ad eum altera suscipit. Nec natum audire oblique ad, ius tota periculis ad, tale periculis sed ex. In sea dico justo expetenda, vel quod clita comprehensam ex, vel sint oporteat ut.',
+		}];
+
 function generateMarketingBlurb(creative) {
+
 var ret = ''
-ret += <section id="team-blurb" class="agent-wrapper-darkblue"> <!--/ Brian container-->
-ret += <div class="agent-container">
-ret += <div class="float-right col-1-3 clearfix">
-ret += <img class="team-photo" src="http://vitamintalent.com/dotAsset/ccf507d4-16b7-4587-808b-ff2a700f7b4f.jpg" alt="Agent-Brian">
-ret += </div>
-ret += <div class="team-member-wrapper"><!--about content-->
-ret += <div class="team-member-title Xlarge-font text-right">
-ret += <div class="agent-intro">
-ret += <span class="color-black">HI, I'M</span> <span class="color-green">BRIAN</span><span class="color-black">!</span>
-ret += </div>;
-ret += </div>;
-ret += <div class="team-content-container">
-ret += <div class="team-content">
-ret += <p>
-ret += Over the better part of a decade, I've been connecting people with what they are passionate about and what they want to do! My passion for helping make this connection has spanned across a range of industries; from working as a Ski Coach in Charlottesville, VA to South Lake Tahoe, CA and as a Recruiter here in the District. This hybrid of experiences and skills has ultimately led me to Vitamin T, where my passion for the creative world and connecting people with opportunities comes to life! Let me help connect you with what you love to do!!
-ret += </p>
-ret += </div>
-ret += <div class="social-bar">
-ret += </div>
-ret += <div class="social-box">
-ret += </div>
-ret += </div>
-ret += </div>
-ret += </div>
+
+ret += '<div class="talent-slide-container">';
+ret += '<div class="talent-slide">';
+ret += '<div class="talent-content-container">';
+ret += '<h1 class="creative-intro color-white Xlarge-font">HEY THERE, <span class="color-blue">I\'M</span>...</h1>';
+ret += '<div class="creative-info">';
+ret += '<h2 class="creative-name color-orange XXlarge-font">' + creative.name + '</h2>';
+ret += '<h3 class="creative-title color-white Xlarge-font">I\'M A <span class="color-blue">' + creative.title + '</span></h3>';
+ret += '<a class="open-blurb color-black medium-font">MORE</a>';
+ret += '</div>';
+ret += '<div class="creative-blurb-container medium-font color-white">';
+ret += '<a class="close-blurb large-font color-black">+</a>';
+ret += '<p class="creative-blurb regular-font">' + creative.blurb + '</p>';
+ret += '<a href="mailto:sbenton@vitamintalent.com?Subject=' + creative.name + '%20looks%20AWESOME!&body=Hi%20Shannon!" class="interested">Interested!</a>';
+ret += '</div>';
+ret += '</div>';
+ret += '</div>';
+ret += '</div>';
 return ret;
 }
 
-for (var i = 0; i < creatives.length; i++)
-html += generateMarketingBlurb(creative[i]);
+for (var i = 0; i < creatives.length; i++) {
+	html += generateMarketingBlurb(creatives[i]);
 
-//'JACKPOT!' button will be a trigger for Mailto which will email the whole DC team. 
-//css class = ''
-    $('.jackpot').on('click',function(){
-        window.location.href = "mailto:washingtondc-vitamintonly@aquent.com?subject=Subject&body=Content%20Goes%20Here"; 
-    });
+$('#slider').html(html);
 
-//Lightbox section below...will get around to writing code shortly.
+};
 
-});
 
-$('#creatives').html(html);
+	$('a[href*=#]:not([href=#])').click(function() {
+ 
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 112
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+	$('.open-blurb').on('click', function() {
+		var creativeInfoBlurb = $(this).parent('.creative-info').next('.creative-blurb-container');
+		creativeInfoBlurb.toggleClass('open');
+	});
+
+	$('.close-blurb').on('click', function() {
+		var creativeInfoBlurb = $(this).parent('.creative-blurb-container');
+		creativeInfoBlurb.removeClass('open');
+	});
+
+$("#slider").owlCarousel({
+  		items: 1,
+  		singleItem: true,
+  		navigation: true,
+  		navigationText: ['<<','>>'],
+  		pagination: true
+  	});
+
+
+  
+
+

@@ -7,18 +7,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="assets/owl.carousel/owl-carousel/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="//assets.aquent.com/fonts/museo-slab/museo-slab.css?1411755200118">
 	<link rel="stylesheet" type="text/css" href="//assets.aquent.com/fonts/bebas-neue/bebas-neue.css?1411755200137">	
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+	<script src="assets/owl.carousel/owl-carousel/owl.carousel.js"></script>
 </head>
 <body>
 	<header>
-		<div id="logo" class="top-bar">
+		<div class="top-bar">
 			<div class="text-center">
 				CREATIVES THAT <span class="color-blue">WOW</span>!
 			</div>
-			<div class="partner">
-				<a class="color-orange medium-font" href="http://www.aquent.com">A</a>
+			<div class="headquarters">
+				<a class="color-green medium-font" href="http://www.vitamintalent.com" target="_blank">HQ</a>
+				<a class="partner color-orange medium-font" href="http://www.aquent.com" target="_blank">A</a>
 			</div>
 		</div>
 		<div class="nav-image">
@@ -28,17 +31,25 @@
 		</div>
 		<div class="nav-bar">
 			<div class="nav-container">
-				<nav class="text-center">
-					<a class="nav-row color-blue medium-font" href="#talent">HOT CREATIVES</a>
-					<a class="nav-row color-blue medium-font" href="#team">AWESOME TEAM</a>
-					<a class="nav-row color-blue medium-font" href="#about">WHAT WE DO</a>
-					<a class="nav-row color-blue medium-font" href="http://www.vitamintalent.com">HQ</a>
+				<nav>
+					<div class="nav-link float-left clearfix">
+						<a class="color-blue medium-font" href="#totw">HOT CREATIVES</a>
+					</div>
+					<div class="nav-link float-left clearfix">
+						<a class="color-blue medium-font" href="#team">AWESOME TEAM</a>
+					</div>
+					<div class="nav-link float-left clearfix">
+						<a class="color-blue medium-font" href="#about">WHAT WE DO</a>
+					</div>
+					<div class="nav-link float-left clearfix">
+						<a class="color-blue medium-font" href="#connect">SAY HELLO</a>
+					</div>
 				</nav>
 			</div>
 		</div>
 	</header>
 	<main>
-		<div class="static-background">
+		<div id="logo" class="static-background">
 			<div class="background-container">
 				<div>
 					<img class="background-image" src="http://www.vitamintalent.com/common/svg/vt-logo.svg" alt="Vitamin-T logo">
@@ -48,14 +59,15 @@
 				</div>
 			</div>
 		</div>
-		<section id="talent" class="creatives-container">
+		<section class="creatives-container">
 			<div class="section-title">
-				<div class="title-bar">
-					<h1 class="Xlarge-font text-right title-talent color-green"><span class="color-white">HOT</span> <span class="color-blue">CREATIVES</span></h1> 
+				<div id="talent-slider" class="title-bar">
+					<h1 id="totw" class="Xlarge-font text-right title-talent color-green"><span class="color-white">HOT</span> <span class="color-blue">CREATIVES</span></h1> 
 				</div>
 			</div>
-			<!--JQuery plug in for cover flow or javascript for photo slider.-->
-			<div>
+			<div id="slider" class="owl-carousel">'
+				<div id="creatives">
+				</div>
 			</div>
 		</section>
 		<div class="window">
@@ -82,6 +94,9 @@
 							</div>
 						</div>
 						<div class="agent-content-container">
+							<div class="ph-contact">
+								<span class="ph-number large-font color-black">202.808.0575</span>
+							</div>
 							<div class="agent-content-brian">
 								<p>
 								Over the better part of a decade, I've been connecting people with what they are passionate about and what they want to do! My passion for helping make this connection has spanned across a range of industries; from working as a Ski Coach in Charlottesville, VA to South Lake Tahoe, CA and as a Recruiter here in the District. This hybrid of experiences and skills has ultimately led me to Vitamin T, where my passion for the creative world and connecting people with opportunities comes to life! Let me help connect you with what you love to do!!
@@ -90,19 +105,15 @@
 							<div class="social-bar">
 							</div>
 							<div class="social-box">
-								<div>
-									<a>
-										<img class="team-icon-email" src="images/Email.png" alt="email">
+								<div class="social-icons">
+									<a href="mailto:bberzellini@vitamintalent.com">
+										<img class="agent-social-icon" src="images/Email.png" alt="email">
 									</a>
-								</div>
-								<div>
-									<a>
-										<img class="team-icon-linkedin" src="images/Linkedin.png" alt="linkedin">
+									<a href="https://www.linkedin.com/profile/view?id=234668881&authType=NAME_SEARCH&authToken=zWRO&locale=en_US&srchid=2346688811412967404084&srchindex=1&srchtotal=1&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A2346688811412967404084%2CVSRPtargetId%3A234668881%2CVSRPcmpt%3Aprimary" target="_blank">
+										<img class="agent-social-icon" src="images/Linkedin.png" alt="linkedin">
 									</a>
-								</div>
-								<div>
-									<a>
-										<img class="team-icon-twitter" src="images/Twitter-Bird-2.png" alt="twitter">
+									<a href="https://twitter.com/Berziiii" target="_blank">
+										<img class="agent-social-icon" src="images/Twitter-Bird-2.png" alt="twitter">
 									</a>
 								</div>
 							</div>
@@ -124,6 +135,9 @@
 							</div>
 						</div>
 						<div class="agent-content-container">
+							<div class="ph-contact">
+								<span class="ph-number large-font color-black">202.808.0576</span>
+							</div>
 							<div class="agent-content-lynn">
 								<p>
 								I'am originally from Southern California (Go Angels!) and I have been recruiting for over 4 years. Let me be honest, I love what I do! I have always enjoyed making my talent and clients happy. Give me a shout, let me find you the best place to work in the creative world. WINNING!!!!
@@ -132,19 +146,15 @@
 							<div class="social-bar">
 							</div>
 							<div class="social-box">
-								<div>
-									<a>
-										<img class="team-icon-email" src="images/Email.png" alt="email">
+								<div class="social-icons">
+									<a href="mailto:lferreira@vitamintalent.com">
+										<img class="agent-social-icon" src="images/Email.png" alt="email">
 									</a>
-								</div>
-								<div>
-									<a>
-										<img class="team-icon-linkedin" src="images/Linkedin.png" alt="linkedin">
+									<a href="https://www.linkedin.com/profile/view?id=142792770&authType=NAME_SEARCH&authToken=B_cq&locale=en_US&srchid=2346688811412967798799&srchindex=1&srchtotal=13&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A2346688811412967798799%2CVSRPtargetId%3A142792770%2CVSRPcmpt%3Aprimary" target="_blank">
+										<img class="agent-social-icon" src="images/Linkedin.png" alt="linkedin">
 									</a>
-								</div>
-								<div>
-									<a>
-										<img class="team-icon-twitter" src="images/Twitter-Bird-2.png" alt="twitter">
+									<a href="https://twitter.com/714Lynn" target="_blank">
+										<img class="agent-social-icon" src="images/Twitter-Bird-2.png" alt="twitter">
 									</a>
 								</div>
 							</div>
@@ -166,6 +176,9 @@
 							</div>
 						</div>
 						<div class="agent-content-container">
+							<div class="ph-contact">
+								<span class="ph-number large-font color-black">202.808.0574</span>
+							</div>
 							<div class="agent-content-shannon">
 								<p>
 								With over a decade working &amp; playing in the creative world, I’ve always known that I was destined to be a Vitamin! I was thrust into the staffing universe immediately after college, and have been selling all around the DC area ever since. I've helped countless ad agencies, associations, &amp; corporate clients in the design/web/digital/publications industries. I have a passion for all things artistic, and love to attend gallery exhibits, concerts &amp; plays and occasionally may even be found on the local community theatre stages. Let's connect!
@@ -174,19 +187,15 @@
 							<div class="social-bar">
 							</div>
 							<div class="social-box">
-								<div>
-									<a>
-										<img class="team-icon-email" src="images/Email.png" alt="email">
+								<div class="social-icons">
+									<a href="mailto:sbenton@aquent.com">
+										<img class="agent-social-icon" src="images/Email.png" alt="email">
 									</a>
-								</div>
-								<div>
-									<a>
-										<img class="team-icon-linkedin" src="images/Linkedin.png" alt="linkedin">
+									<a href="https://www.linkedin.com/profile/view?id=5812213&authType=NAME_SEARCH&authToken=OKPv&locale=en_US&trk=tyah2&trkInfo=tarId%3A1412967862184%2Ctas%3Ashannon%2Cidx%3A1-1-1" target="_blank">
+										<img class="agent-social-icon" src="images/Linkedin.png" alt="linkedin">
 									</a>
-								</div>
-								<div>
-									<a>
-										<img class="team-icon-twitter" src="images/Twitter-Bird-2.png" alt="twitter">
+									<a href="https://twitter.com/sayhi2shannon" target="_blank">
+										<img class="agent-social-icon" src="images/Twitter-Bird-2.png" alt="twitter">
 									</a>
 								</div>
 							</div>
@@ -207,19 +216,19 @@
 				</div>
 				<div class="about-section-container">
 					<h1 class="text-center Xlarge-font color-black">Proprietary <span class="color-blue">Screening Process</span></h1>
-					<p class="text-center large-font color-black">The exhaustive work we put into finding and vetting only the very best talent ensures that you’ll only see the right people for your job. Our proprietary screening process&nbsp;includes:</p>
+					<p class="text-center medium-font color-black">The exhaustive work we put into finding and vetting only the very best talent ensures that you’ll only see the right people for your job. Our proprietary screening process&nbsp;includes:</p>
 				</div>
 			</div>
 			<div class="about-section-white">
 				<div class="about-section-container">
 						<h1 class="text-center Xlarge-font color-black">Quick <span class="color-orange">Hire</span> </h1>
-						<p class=" text-center color-black medium-font">We believe finding creative talent should be fast and easy (for you). Our <a class="color-orange" href="http://www.vitamintalent.com/quickhire/" title="Quick Hire">Quick Hire tool </a>lets you explore the talent we represent and contact us to quickly find the person you need. Need talent even faster? <a class="color-orange" href="http://vitamintalent.com/connect/" title="Connect with your local office">Connect with your local office</a> by&nbsp;calling&nbsp;202&nbsp;293&nbsp;5700.</p>
+						<p class=" text-center color-black medium-font">We believe finding creative talent should be fast and easy (for you). Our <a class="color-orange" href="http://www.vitamintalent.com/quickhire/" title="Quick Hire" target="_blank">Quick Hire tool </a> lets you explore the talent we represent and contact us to quickly find the person you need. Need talent even faster? <a class="color-orange" href="http://vitamintalent.com/connect/" title="Connect with your local office" target="_blank">Connect with your local office</a> by calling 202.461.3388!</p>
 				</div>
 			</div>
 			<div class="about-section-off-white">
 				<div class="about-section-container">
 					<h1 class="text-center Xlarge-font color-black"><span class="color-green">TALENT</span> BRIDGE</h1>
-					<p class=" text-center color-black medium-font">Take a 3-month spin with talent and see how they perform outside the interview and in your actual work environment. Your team and your talent get a chance to interact before a permanent hire is made, so you can be sure they’re the right fit long beyond right now. <a class="color-green" href="http://vitamintalent.com/talent-bridge/" title="Learn more about Talent Bridge">Learn more about Talent Bridge.</a></p>
+					<p class=" text-center color-black medium-font">Take a 3-month spin with talent and see how they perform outside the interview and in your actual work environment. Your team and your talent get a chance to interact before a permanent hire is made, so you can be sure they’re the right fit long beyond right now. <a class="color-green" href="http://vitamintalent.com/talent-bridge/" title="Learn more about Talent Bridge" target="_blank">Learn more about Talent Bridge.</a></p>
 				</div>
 			</div>
 			<div class="about-section-white">
@@ -244,70 +253,88 @@
 				</div>
 			</div>
 		</section>
+		<section id="connect" class="contact-us-wrapper">
+			<div class="title-bar-contact">
+				<h1 class="Xlarge-font text-right title-contact"><span class="color-black">SAY</span> <span class="color-orange">HELLO</span></h1> 
+			</div>
+			<div class="contact-content-container">
+				<h2 class="Xlarge-font contact-company color-green">Vitamin T</h2>
+				<h4 class="large-font color-green contact-address">1025 connecticut ave. NW</h4>
+				<h4 class="large-font color-green contact-address"> washington, D.C. 20036</h4>
+				<h2 class="Xlarge-font color-green contact-phone">202.461.3388</h4>
+			</div>
+			<div class="contact-link-bar">
+				<div class="contact-social-wrapper">
+					<div class="contact-social-container-1 float-left clearfix">
+						<a href="mailto:washingtondc-vitamintonly@aquent.com">
+							<img class="contact-social-icon" src="images/large/Email.png" alt="email">
+						</a>
+					</div>
+					<div class="contact-social-container-2 float-left clearfix">
+						<a href="https://www.linkedin.com/company/2217719?trk=tyah&trkInfo=tarId%3A1412968068752%2Ctas%3Avitamin%20T%2Cidx%3A2-1-4" target="_blank">
+							<img class="contact-social-icon" src="images/large/Linkedin.png" alt="linkedin">
+						</a>
+					</div>
+					<div class="contact-social-container-3 float-left clearfix">
+						<a href="https://twitter.com/vitamintalent" target="_blank">
+							<img class="contact-social-icon" src="images/large/Twitter-Bird-2.png" alt="twitter">
+						</a>
+					</div>
+					<div class="contact-social-container-4 float-left clearfix">
+						<a href="https://www.facebook.com/VitaminTalent" target="_blank">
+							<img class="contact-social-icon" src="images/large/Facebook.png" alt="facebook">
+						</a>
+					</div>
+					<div class="contact-social-container-5 float-left clearfix">
+						<a href="http://www.pinterest.com/vitamintalent/" target="_blank">
+							<img class="contact-social-icon" src="images/large/Pinterest.png" alt="facebook">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer>
 		<div class="footer-wrapper">
 			<div class="footer-container clearfix">
 				<div class="col-1-4 float-left clearfix">
 		            <h4 class="color-off-white regular-font">JOBS WE PLACE</h4>
-		            <ul>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/design-jobs-we-place.htm" title="Design">Design</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/development-jobs-we-place.htm" title="Development">Development</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/content-jobs-we-place.htm" title="Content/Delivery">Content/Delivery</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/find-work/" title="Find Work">Find Work</a></li>
+		            <ul class="text-center">
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/design-jobs-we-place.htm" title="Design" target="_blank">Design</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/development-jobs-we-place.htm" title="Development" target="_blank">Development</a></li>
+		                <li class="text-left footer-link" target="_blank"><a class="color-blue" href="http://vitamintalent.com/company/content-jobs-we-place.htm" title="Content/Delivery" target="_blank">Content/Delivery</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/find-work/" title="Find Work" target="_blank">Find Work</a></li>
 	            	</ul>
         		</div>
         		<div class="col-1-4 float-left clearfix">
 		            <h4 class="color-off-white regular-font">ABOUT VITAMIN T</h4>
-		            <ul>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/what-we-do/" title="What we do">What We Do</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/talent-bridge/" title="Talent Bridge">Talent Bridge</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/quickhire/" title="Quick Hire">Quick Hire</a></li>
+		            <ul class="text-center">
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/what-we-do/" title="What we do" target="_blank">What We Do</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/talent-bridge/" title="Talent Bridge" target="_blank">Talent Bridge</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/quickhire/" title="Quick Hire" target="_blank">Quick Hire</a></li>
 	            	</ul>
 	        	</div>
         		<div class="col-1-4 float-left clearfix">
 		            <h4 class="color-off-white regular-font">RESOURCES AND TOOLS</h4>
-		            <ul>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/vitabites/" title="Vita Bites">Vita Bits</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/learning/" title="Extra Skills">Gain Skills</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/connect/" title="Connect">Connect</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/privacy-policy.htm" title="Policy">Private Policy</a></li>
+		            <ul class="text-center">
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/vitabites/" title="Vita Bites" target="_blank">Vita Bits</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/learning/" title="Extra Skills" target="_blank">Gain Skills</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/connect/" title="Connect" target="_blank">Connect</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://vitamintalent.com/company/privacy-policy.htm" title="Policy" target="_blank">Private Policy</a></li>
 	            	</ul>
         		</div>
         		<div class="col-1-4 float-left clearfix">
 		            <h4 class="color-off-white regular-font">AFFILIATED SITES</h4>
-		            <ul>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://aquentcareers.com/" title="Careers">Vitamin T Careers</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://aquent.com/" title="Aquent">Aquent</a></li>
-		                <li class="text-left footer-link"><a class="color-blue" href="http://www.thegymnasium.com/" title="Gymnasium">Gymnasium</a></li>
+		            <ul class="text-center">
+		                <li class="text-left footer-link"><a class="color-blue" href="http://aquentcareers.com/" title="Careers" target="_blank">Vitamin T Careers</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://aquent.com/" title="Aquent" target="_blank">Aquent</a></li>
+		                <li class="text-left footer-link"><a class="color-blue" href="http://www.thegymnasium.com/" title="Gymnasium" target="_blank">Gymnasium</a></li>
 	            	</ul>
         		</div>
 			</div>
 			<div class="social-box-footer">
-				<div>
-					<a>
-						<img class="social-icon-email" src="images/Email.png" alt="email">
-					</a>
-				</div>
-				<div>
-					<a>
-						<img class="social-icon-linkedin" src="images/Linkedin.png" alt="linkedin">
-					</a>
-				</div>
-				<div>
-					<a>
-						<img class="social-icon-twitter" src="images/Twitter-Bird-2.png" alt="twitter">
-					</a>
-				</div>
-				<div>
-					<a>
-						<img class="social-icon-facebook" src="images/Facebook.png" alt="facebook">
-					</a>
-				</div>
-				<div>
-					<a>
-						<img class="social-icon-pinterest" src="images/Pinterest.png" alt="facebook">
-					</a>
+				<div class="footer-social">
+					<span class="color-black">&copy; Brian Berzellini | All Rights reserved</span>
 				</div>
 			</div>
 		</div>
