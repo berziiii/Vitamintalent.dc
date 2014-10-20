@@ -1,33 +1,3 @@
-@font-face {
-    font-family: 'MuseoSlab500';
-    src: url('museo-slab-500.eot');
-    src: url('museo-slab-500.eot?#iefix') format('embedded-opentype'), url('museo-slab-500.woff') format('woff'), url('museo-slab-500.ttf') format('truetype'), url('museo-slab-500.svg#MuseoSlab500') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-}
-
-@font-face {
-    font-family: 'MuseoSlab700';
-    src: url('museo-slab-700.eot');
-    src: url('museo-slab-700.eot?#iefix') format('embedded-opentype'), url('museo-slab-700.woff') format('woff'), url('museo-slab-700.ttf') format('truetype'), url('museo-slab-700.svg#MuseoSlab700') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-}
-
-@font-face {
-  font-family: 'BebasNeue';
-  src:url('bebas-neue.eot');
-  src:url('bebas-neue.eot?#iefix') format('embedded-opentype'),
-    url('bebas-neue.woff') format('woff'),
-    url('bebas-neue.ttf') format('truetype'),
-    url('bebas-neue.svg#BebasNeue') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-}
-
 body {
 	background-color: #1e1a17;
 	color: #fff;
@@ -79,23 +49,33 @@ h4 {
 	padding-top: .2%;
 }
 
-.col-1-2 {
+.col-50 {
 	width: 50%;
 	padding-left: 2%;
 	padding-right: 2%;
 }
 
-.col-1-4 {
+.col-25 {
 	width: 25%;
 	display: inline-block;
 }
 
-.col-1-3 {
-	width: 33%;
+.col-30 {
+	width: 30%;
+	float:left;
+	position: relative;
 }
 
-.col-2-3 {
-	width: 66%;
+.col-33 {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+}
+
+.col-70 {
+	width: 70%;
+	float:left;
+	position: relative;
 }
 
 .center {
@@ -226,17 +206,19 @@ a.partner:hover, a.color-green:hover {
 }
 
 .top-bar {
+	font-size: 1.5rem;
 	position: fixed;
 	top: 0%;
 	z-index: 9999;
 	width: 100%;
-	height: 28px;
+	height: 2rem;
 	background-color: #1e1a17;
 	display: inline-block;
 }
 
 .nav-image {
 	position: fixed;
+	width: 7em;
 	top: .3rem;
 	left: 15%;
 	z-index: 10000;
@@ -267,8 +249,7 @@ a.partner:hover, a.color-green:hover {
 }
 
 .nav-link {
-	width: 25%;
-	height: 80px;
+	height: 5rem;
 	text-align: center;
 	border-right: 1px dotted #666667;
 }
@@ -276,13 +257,6 @@ a.partner:hover, a.color-green:hover {
 .nav-link:hover {
 	background-color: #1E1A17;
 	border: 1px dotted #00a798;
-}
-
-.static-background {
-	background-color: : #1e1a17;
-	width: 100%;
-	height: 750px;
-	z-index: -2000;
 }
 
 .background-container {
@@ -315,15 +289,18 @@ a.partner:hover, a.color-green:hover {
 
 .window {
 	width: 100%;
-	height: 150px;
+	height: 17rem;
 	background-color: #1e1a17;
 	z-index: -1000;
 	opacity: .0;
 }
 
 .creatives-container {
+	font-size: 1rem;
 	width: 100%;
 	height: 650px;
+	margin-top: 5rem;
+	padding-top: 2rem;
 	z-index: 1000;
 	background-color: #9DC444;
 }
@@ -343,8 +320,8 @@ a.partner:hover, a.color-green:hover {
 
 .owl-prev, .owl-next {
 	position: absolute;
-	width: 100px;
-	height: 100px;
+	width: 6.25rem;
+	height: 6.25rem;
 	background-color: #00A798;
 	color: #322F28;
 	top: 150px;
@@ -421,8 +398,8 @@ a.partner:hover, a.color-green:hover {
 
 .close-blurb {
 	position: absolute;
-	top: 10px;
-	right: 10px;
+	top: -10px;
+	right: 0px;
 	transform: rotate(45deg);
 	font-family: arial;
 }
@@ -465,43 +442,26 @@ a.interested:hover {
 
 .team-container {
 	width: 100%;
+	padding-top: 2rem;
 	z-index: 1000;
-	background-color: #006056;
-}
-
-.agent-wrapper-darkblue {
-	width: 100%;
-	padding-bottom: .5rem;
-	background-color: #006056;
+	background-color: #00A798;
+	padding-bottom: 1rem;
 }
 
 .agent-container {
-	margin: 3rem auto;
-	width: 75%;
-	height: 22rem;
-	background-color: #006056;
-}
-
-.agent-image-container {
 	position: relative;
-	margin-left: -12%;
-	width: 127%;
-	height: 21.5rem;
-	overflow: hidden;
-	border-radius: 10%;
-	z-index: 2000;
-}
-
-.agent-image {
-	position: absolute;
-	margin-left: -23rem;
-	width: 55rem;
-	z-index: 1000;
+	font-size: 1rem;
+	margin: 5em auto;
+	width: 75%;
+	background-color: #1E1A17;
+	border-bottom: 5px solid #EF8200;
+	border-left: 6px solid #FFF;
 }
 
 .agent-member-wrapper {
+	font-size: 1em;
 	margin: 0px auto;
-	width: 105%;
+	width: 100%;
 	height: 345px;
 	border-radius: 5%;
 	z-index: 1500;
@@ -510,65 +470,66 @@ a.interested:hover {
 }
 
 .agent-member-title {
+	font-size: 3em;
 	background-color: #fff;
-	width: 60%;
 	z-index: 1000;
-}
-
-.agent-content-container {
-	position: absolute;
-	display: inline-block;
-	border-left: 6px solid #FFF;
 }
 
 .ph-contact {
 	background-color: #EF8200;
-	width: 15.25rem;
+	width: 30%;
 	text-align: center;
+	font-size: 2em;
 }
 
 .agent-intro {
 	width: 100%;
 }
 
+.agent-image {
+	width: 100%;
+	z-index: 1000;
+	margin-bottom: -.19em;
+}
+
+.brian-image {
+	background: url(../images/agent-brian.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: 100%;
+ 	width: 100%;
+ 	height: 300px;
+}
+
 .agent-content-brian, .agent-content-lynn, .agent-content-shannon {
-	width: 40%;
-	height: 185px;
-	margin-left: 10%;
+	width: 90%;
+	margin: 0px auto;
 	font-family: 'MuseoSlab500', Georgia,serif;
 	font-style: italic;
 	color: #B2A996;
+	text-align: center;
+	padding-top: .5em;
+	font-size: 1.2em;
+	line-height: 1em;
 }
 
 .agent-content-lynn p {
-	padding-top: 35px;
-}
-
-.social-bar {
-	width: 62.5%;
-	height: 5px;
-	margin-left: -0.5%;
-	margin-top: 3%;
-	top: 100%;
-	z-index: 1000;
-	background-color: #EF8200;
+	padding-top: 2em;
 }
 
 .social-box {
-	position: relative;
-	width: 12%;
-	height: 2rem;
-	margin-top: -37px;
-	left: 545px;
+	position: absolute;
+	width: 10em;
+	bottom: -1%;
+	height: 2em;
 	z-index: 3000;
 	background-color: #EF8200;
 }
 
 .social-icons {
-	width: 80%;
-	margin: 0px auto;
-	text-align: center;
-	padding-top: 2px;
+	width: 100%;
+	padding-top: .13em;
 }
 
 .agent-social-icon {
@@ -584,16 +545,16 @@ a.interested:hover {
 
 .about-section-off-white {
 	width: 100%;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	z-index: 1000;
-	background-color: #eee;
+	background-color: #ddd;
 }
 
 .about-section-white {
 	width: 100%;
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	z-index: 1000;
 	background-color: #fff;
 }
@@ -610,14 +571,14 @@ a.interested:hover {
 }
 
 .contact-us-wrapper {
-	background-color: #000;
+	background-color: #322F28;
 	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .contact-content-container {
-	background-color: #000;
+	background-color: #322F28;
 	width: 50%;
 	margin: 0px auto;
 	height: 200px;
@@ -687,7 +648,7 @@ a.interested:hover {
 	overflow: hidden;
 	width: 100%;
 	padding-bottom: 1rem;
-	background-color: #322F28;
+	background-color: #1E1A17;
 	border-bottom: 6px solid #EF8200;
 }
 
@@ -725,4 +686,14 @@ a.interested:hover {
 	background-color: #8F2E0D;
 }
 
+@media (max-width: 800px) {
 
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+
+}
+
+@media print {
+
+}

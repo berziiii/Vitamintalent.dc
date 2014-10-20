@@ -29,7 +29,7 @@ ret += '<h3 class="creative-title color-white Xlarge-font">I\'M A <span class="c
 ret += '<a class="open-blurb color-black medium-font">MORE</a>';
 ret += '</div>';
 ret += '<div class="creative-blurb-container medium-font color-white">';
-ret += '<a class="close-blurb large-font color-black">+</a>';
+ret += '<a class="close-blurb Xlarge-font color-black">+</a>';
 ret += '<p class="creative-blurb regular-font">' + creative.blurb + '</p>';
 ret += '<a href="mailto:sbenton@vitamintalent.com?Subject=' + creative.name + '%20looks%20AWESOME!&body=Hi%20Shannon!" class="interested">Interested!</a>';
 ret += '</div>';
@@ -76,7 +76,8 @@ $("#slider").owlCarousel({
   		singleItem: true,
   		navigation: true,
   		navigationText: ['<<','>>'],
-  		pagination: true
+  		pagination: true,
+  		autoPlay: true
   	});
 
 
