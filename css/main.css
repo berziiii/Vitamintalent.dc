@@ -33,6 +33,10 @@ a.close-blurb:hover {
 	color: orange;
 }
 
+a.color-green:hover, a.color-orange:hover {
+	opacity: 0.8;
+}
+
 h4 {
 	margin-top: -1rem;
 	padding-top: 2rem;
@@ -70,6 +74,13 @@ h4 {
 	width: 33.33%;
 	float: left;
 	text-align: center;
+}
+
+.col-50 {
+	width: 50%;
+	float: left;
+	text-align: center;
+	display: inline-block;
 }
 
 .col-70 {
@@ -158,34 +169,18 @@ h4 {
 }
 
 .title-bar {
-	width: 75%;
+	width: 100%;
 	z-index: 1000;
-	background-color: #000;
 	margin-bottom: 70px;
+	background-color: #000;
+}
+
+.title-talent, .title-team, .title-about, .title-contact, .title-bar-contact {
+	text-align: center
 }
 
 .title-bar-contact {
-	width: 75%;
-	z-index: 1000;
 	background-color: #fff;
-	margin-bottom: 50px;
-
-}
-
-.title-talent {
-	margin-right: 23%;
-}
-
-.title-team {
-	margin-right: 22%;
-}
-
-.title-about {
-	margin-right: 24.5%;
-}
-
-.title-contact {
-	margin-right: 26%;
 }
 
 /*  Module Class */
@@ -571,44 +566,47 @@ a.interested:hover {
 }
 
 .contact-us-wrapper {
-	background-color: #322F28;
+	background-color: #404040;
 	width: 100%;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
 
 .contact-content-container {
-	background-color: #322F28;
+	background-color: #404040;
 	width: 50%;
 	margin: 0px auto;
-	height: 200px;
 }
 
-.contact-company, .contact-phone {
+.contact-phone {
+	padding-top: 5px;
+	margin-bottom: 15px;
+	text-align: center;
+	color: #9DC444;
+	text-shadow: -2px -2px 0px #000;
+}
+
+.contact-company {
 	padding-top: 5px;
 	margin-bottom: 15px;
 	text-align: center;
 }
 
+
 .contact-address {
 	margin: 0px;
 	padding: 0px;
 	text-align: center;
+	color: #9DC444;
+	text-shadow: -2px -2px 0px #000;
 }
 
 .contact-link-bar {
 	width: 100%;
 	height: 100px;
-	margin-bottom: 50px;
-	margin-top: 75px;
-	background-color: #9DC444;
-}
-
-.contact-social-wrapper {
-	width: 75%;
-	margin: 0px auto;
-	height: 100px;
-	background-color: #9DC444;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	background-color: #000;
 }
 
 .contact-social-container-1, .contact-social-container-2, .contact-social-container-3, .contact-social-container-4, .contact-social-container-5 {
@@ -616,31 +614,34 @@ a.interested:hover {
 	text-align: center;
 	padding: 4px;
 	height: 100px;
-	background-color: #9DC444;
+}
+
+.contact-social-container-1 {
+	background-color: #93ba3b;
+}
+
+.contact-social-container-2 {
+	background-color: #87ab36;
+}
+
+.contact-social-container-3 {
+	background-color: #7b9c31;
+}
+
+.contact-social-container-4 {
+	background-color: #708d2c;
+} 
+
+.contact-social-container-5 {
+	background-color: #647e28;
 }
 
 .contact-social-icon {
 	width: 92px;
 } 
 
-.contact-social-container-1:hover {
-	background-color: #89AB3B;
-}
-
-.contact-social-container-2:hover {
-	background-color: #759333;
-}
-
-.contact-social-container-3:hover {
-	background-color: #627A2A;
-}
-
-.contact-social-container-4:hover {
-	background-color: #4E6222;
-}
-
-.contact-social-container-5:hover {
-	background-color: #3A4919;
+.contact-social-container-1:hover, .contact-social-container-2:hover, .contact-social-container-3:hover, .contact-social-container-4:hover, .contact-social-container-5:hover {
+	opacity: 0.8;
 }
 
 .footer-wrapper {
