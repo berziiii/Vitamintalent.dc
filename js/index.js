@@ -31,7 +31,7 @@ ret += '</div>';
 ret += '<div class="creative-blurb-container medium-font color-white">';
 ret += '<a class="close-blurb Xlarge-font color-black">+</a>';
 ret += '<p class="creative-blurb regular-font">' + creative.blurb + '</p>';
-ret += '<a href="mailto:sbenton@vitamintalent.com?Subject=' + creative.name + '%20looks%20AWESOME!&body=Hi%20Shannon!" class="interested">Interested!</a>';
+ret += '<a class="interested" href="mailto:sbenton@vitamintalent.com?Subject=' + creative.name + '%20looks%20AWESOME!&body=Hi%20Shannon!">Interested!</a>';
 ret += '</div>';
 ret += '</div>';
 ret += '</div>';
