@@ -260,9 +260,10 @@ a.partner:hover, a.color-green:hover {
 
 .nav-responsive {
 	width: 40px;
+	height: 40px;
 	position: absolute;
-	top: 20px;
-	right: 8%;
+	top: 24px;
+	right: 5%;
 	visibility: hidden;
 }
 
@@ -1156,7 +1157,7 @@ a.interested:hover {
 	}
 
 	.about-section-container {
-	width: 70%;
+		width: 70%;
 	}
 
 	.footer-social {
@@ -1168,16 +1169,11 @@ a.interested:hover {
 		width: 6em;
 	}
 
-	.nav-container {
+	.partner, .nav-container, .window, .about-different-content, .headquarters {
 		display: none;
 	}
 
 	.nav-responsive {
-		width: 40px;
-		height: 40px;
-		position: absolute;
-		top: 30px;
-		right: 10%;
 		visibility: visible;
 	}
 
@@ -1257,10 +1253,6 @@ a.interested:hover {
 		width: 100%;
 	}
 
-	.about-different-content {
-		display: none;
-	}
-
 	.social-box-footer {
 		width: 25%;
 	}
@@ -1324,10 +1316,6 @@ a.interested:hover {
 
 	.owl-next {
 		padding-right: 30px;
-	}
-
-	.window {
-		display: none;
 	}
 
 	.nav-container {
