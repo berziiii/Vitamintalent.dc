@@ -260,15 +260,10 @@ a.partner:hover, a.color-green:hover {
 
 .nav-responsive {
 	width: 40px;
-	height: 40px;
 	position: absolute;
-	top: 30px;
-	right: 10%;
+	top: 20px;
+	right: 8%;
 	visibility: hidden;
-}
-
-.responsive-menu {
-
 }
 
 .nav-responsive:hover {
@@ -278,9 +273,36 @@ a.partner:hover, a.color-green:hover {
 .nav-responsive-btn {
   	display: block;
 	width: 40px;
-	height: 3px;
+	height: 5px;
 	margin: 0 0 8px;
 	background: #00a798;
+}
+
+.responsive-menu {
+	background-color: #000;
+	width: 300px;
+	right: 0px;
+	top: 78px;
+	position: absolute;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-out;
+}
+
+.responsive-menu-container {
+	width: 100%;
+	height: 75px;
+	text-align: center;
+	border: 1px solid #00a798;
+}
+
+.responsive-menu-link {
+	font-size: 18pt;
+	color: #00a798;
+	line-height: 75px;
+}
+
+.open-responsive-menu {
+	transform: translateX(0%);
 }
 
 .background-container {
@@ -448,6 +470,8 @@ a.partner:hover, a.color-green:hover {
 .open {
 	transform: translateY(-100%);
 }
+
+
 
 .interested {
 	font-family: 'BebasNeue';

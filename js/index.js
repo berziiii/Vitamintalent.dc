@@ -70,6 +70,11 @@ $('#slider').html(html);
 		creativeInfoBlurb.removeClass('open');
 	});
 
+	$('.nav-responsive').on('click', function() {
+		var responsiveNavMenu = $('.responsive-menu')
+		responsiveNavMenu.toggleClass('open-responsive-menu');
+	});
+
 $("#slider").owlCarousel({
   		items: 1,
   		singleItem: true,
