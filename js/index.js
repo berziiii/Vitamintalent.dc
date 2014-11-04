@@ -49,12 +49,12 @@ $.get('Talent-table.csv', function (data) {
 
 	$('#slider').html(html);
 
-	$('.open-blurb').on('click', function() {
+	$('.open-blurb').on('click tap', function() {
 		var creativeInfoBlurb = $(this).parent('.creative-info').next('.creative-blurb-container');
 		creativeInfoBlurb.toggleClass('open');
 	});
 
-	$('.close-blurb').on('click', function() {
+	$('.close-blurb').on('click tap', function() {
 		var creativeInfoBlurb = $(this).parent('.creative-blurb-container');
 		creativeInfoBlurb.removeClass('open');
 	});
@@ -94,6 +94,6 @@ function toggleMenu(e) {
 
 
 
-  $(window).on('click', toggleMenu);
+  $(window).on('click tap', toggleMenu);
 
 
