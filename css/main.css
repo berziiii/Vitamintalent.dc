@@ -709,6 +709,7 @@ a.interested:hover {
 	padding-bottom: 1rem;
 	background-color: #1E1A17;
 	border-bottom: 6px solid #EF8200;
+	margin-bottom: -80px;
 }
 
 .footer-container {
