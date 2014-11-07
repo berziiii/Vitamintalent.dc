@@ -286,8 +286,16 @@ a.partner:hover, a.color-green:hover {
 	right: 0px;
 	top: 78px;
 	position: absolute;
+	transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
 	transform: translateX(100%);
-	transition: transform 0.3s ease-out;
+	-webkit-transform: translateX(100%);
+  	-moz-transform: translateX(100%);
+  	-ms-transform: translateX(100%);
+  	-o-transform: translateX(100%);
 }
 
 .responsive-menu-container {
@@ -304,6 +312,10 @@ a.partner:hover, a.color-green:hover {
 }
 
 .open-responsive-menu {
+	-webkit-transform: translateX(0%);
+  	-moz-transform: translateX(0%);
+  	-ms-transform: translateX(0%);
+  	-o-transform: translateX(0%);
 	transform: translateX(0%);
 }
 
@@ -449,6 +461,10 @@ a.partner:hover, a.color-green:hover {
 	top: -10px;
 	right: 0px;
 	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+  	-moz-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	-o-transform: rotate(45deg);
 	font-family: arial;
 }
 
@@ -460,8 +476,16 @@ a.partner:hover, a.color-green:hover {
 	text-align: center;
 	background-color: #00A798;
 	position: absolute;
-	transform: translateY(0);
-	transition: transform 0.3s ease-out;
+	transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+	transform: translateY(0%);
+	-webkit-transform: translateY(0%);
+  	-moz-transform: translateY(0%);
+  	-ms-transform: translateY(0%);
+  	-o-transform: translateY(0%);
 }
 
 .creative-blurb {
@@ -471,9 +495,11 @@ a.partner:hover, a.color-green:hover {
 
 .open {
 	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+  	-moz-transform: translateY(-100%);
+  	-ms-transform: translateY(-100%);
+  	-o-transform: translateY(-100%);
 }
-
-
 
 .interested {
 	font-family: 'BebasNeue';
@@ -545,17 +571,7 @@ a.interested:hover {
 	margin-bottom: -.19em;
 }
 
-.brian-image {
-	background: url(../images/agent-brian.jpg) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
- 	background-size: 100%;
- 	width: 100%;
- 	height: 300px;
-}
-
-.agent-content-brian, .agent-content-lynn, .agent-content-shannon {
+.agent-content-brian, .agent-content-lynn, .agent-content-shannon, .agent-content-courtney {
 	width: 90%;
 	margin: 0px auto;
 	font-family: 'MuseoSlab500', Georgia,serif;
@@ -569,6 +585,11 @@ a.interested:hover {
 
 .agent-content-lynn p {
 	padding-top: 2em;
+}
+
+.agent-content-courtney {
+	width: 99%;
+	padding: 0px;
 }
 
 .social-box {

@@ -51,7 +51,7 @@ $.get('Talent-table.csv', function (data) {
 
 	$('.open-blurb').on('click tap', function() {
 		var creativeInfoBlurb = $(this).parent('.creative-info').next('.creative-blurb-container');
-		creativeInfoBlurb.toggleClass('open');
+		creativeInfoBlurb.addClass('open');
 	});
 
 	$('.close-blurb').on('click tap', function() {
