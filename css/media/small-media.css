@@ -4,6 +4,19 @@
 		cursor: pointer;
 	}
 
+	.nav-bar {
+    	top: 0;
+    	height: 95px;
+    }
+
+    .nav-responsive {
+		top: 32px;
+	}
+
+	.responsive-menu {
+		top: 93px;
+	}
+
 	.col-70 {
 		font-size: 9.75pt;
 	}
@@ -19,6 +32,7 @@
 	.nav-image {
 		left: 10%;
 		width: 6em;
+		top: 0;
 	}
 
 	.partner, .nav-container, .window, .about-different-content, .headquarters {
@@ -35,6 +49,10 @@
 
 	.creative-blurb {
 		font-size: 11pt;
+	}
+
+	.creatives-container {
+		margin-top: 70px;
 	}
 
 	.owl-prev, .owl-next {
@@ -110,6 +128,18 @@
 	}
 
 @media (max-width: 860px) {
+
+	.nav-bar {
+    	height: 90px;
+    }
+
+    .nav-responsive {
+		top: 28px;
+	}
+
+	.responsive-menu {
+		top: 87px;
+	}
 
 	.col-70 {
 		font-size: 9.5pt;
@@ -220,6 +250,18 @@
 
 @media (max-width: 810px) {
 
+	.nav-bar {
+    	height: 80px;
+    }
+
+    .nav-responsive {
+		top: 25px;
+	}
+
+	.responsive-menu {
+		top: 77px;
+	}
+
 	.col-70 {
 		font-size: 9pt;
 	}
@@ -233,12 +275,16 @@
 	}
 
 	.nav-image {
-		left: 10%;
-		width: 6em;
+		left: 9%;
+		width: 5em;
 	}
 
 	.creative-blurb {
 		font-size: 11pt;
+	}
+
+	.creatives-container {
+		margin-top: 55px;
 	}
 
 	.owl-prev, .owl-next {
@@ -377,7 +423,7 @@
 	}
 
 	.open-blurb {
-		margin-top: -35px;
+		margin-top: -80px;
 	}
 
 	.owl-prev, .owl-next {
@@ -440,7 +486,7 @@
     	font-size: 20pt;
     }
 
-	.agent-content-brian, .agent-content-lynn, .agent-content-shannon {
+	.agent-content-brian, .agent-content-lynn, .agent-content-shannon, .agent-content-courtney {
 		font-size: 8pt;
 	}
 
@@ -568,7 +614,7 @@
     }
 
     .creative-info {
-    	height: 302px;
+    	height: 304px;
     }
 
 	.creative-blurb {
@@ -576,7 +622,7 @@
 	}
 
 	.open-blurb {
-		margin-top: -35px;
+		margin-top: -80px;
 	}
 
 	.owl-prev, .owl-next {

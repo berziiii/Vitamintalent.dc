@@ -1,7 +1,11 @@
 @media (max-width: 1399px) {
 
 	.col-70 {
-		font-size: 11pt;
+		font-size: 11.5pt;
+	}
+
+	.nav-link > a, .headquarters > a, .top-bar {
+		font-size: 20pt;
 	}
 
 	.footer-social {
@@ -9,7 +13,8 @@
 	}
 
 	.nav-image {
-		left: 14%;
+		left: 13%;
+		width: 88px;
 	}
 
 	.creative-blurb {
@@ -31,41 +36,11 @@
 @media (max-width: 1320px) {
 
 	.col-70 {
-		font-size: 14pt;
+		font-size: 10.5pt;
 	}
 
 	.about-section-container {
-	width: 62%;
-	}
-
-	.nav-image {
-		left: 13%;
-	}
-
-	.creative-blurb {
-		font-size: 11pt;
-	}
-
-	.owl-prev, .owl-next {
-		width: 90px;
-		height: 90px;
-		line-height: 90px;
-		font-size: 36px;
-	}
-
-	.social-box {
-		width: 10em;
-	}
-}
-
-@media (max-width: 1320px) {
-
-	.col-70 {
-		font-size: 11pt;
-	}
-
-	.about-section-container {
-	width: 63%;
+		width: 63%;
 	}
 
 	.nav-image {
@@ -73,7 +48,7 @@
 	}
 
 	.creative-blurb {
-		font-size: 11pt;
+		font-size: 12.5pt;
 	}
 
 	.owl-prev, .owl-next {
@@ -83,8 +58,16 @@
 		font-size: 36px;
 	}
 
+	.open-blurb {
+		font-size: 15pt;
+	}
+
 	.about-different-content {
 		font-size: 13pt;
+	}
+
+	.footer-link {
+		font-size: 14pt;
 	}
 }
 
@@ -92,10 +75,6 @@
 
 	.col-70 {
 		font-size: 10pt;
-	}
-
-	.footer-social {
-		font-size: 9pt;
 	}
 
 	.about-section-container {
@@ -107,7 +86,7 @@
 	}
 
 	.creative-blurb {
-		font-size: 10.5pt;
+		font-size: 12pt;
 	}
 
 	.owl-prev, .owl-next {
@@ -119,6 +98,10 @@
 
 	.about-different-content {
 		font-size: 13pt;
+	}
+
+	.footer-social {
+		font-size: 9pt;
 	}
 }
 
@@ -132,11 +115,15 @@
 	}
 
 	.about-section-container {
-	width: 80%;
+		width: 80%;
 	}
 
 	.nav-image {
 		left: 12%;
+	}
+
+	.creative-intro, .creative-title {
+		font-size: 34pt;
 	}
 
 	.creative-blurb {
@@ -157,8 +144,12 @@
 
 @media (max-width: 1100px) {
 
+	.nav-link > a, .headquarters > a, .top-bar {
+		font-size: 18pt;
+	}
+
 	.col-70 {
-		font-size: 9pt;
+		font-size: 8.75pt;
 	}
 
 	.footer-social {
@@ -166,7 +157,7 @@
 	}
 
 	.about-section-container {
-	width: 80%;
+		width: 80%;
 	}
 
 	.nav-image {
@@ -196,7 +187,7 @@
 	}
 
 	.about-section-container {
-	width: 64%;
+		width: 64%;
 	}
 
 	.footer-social {
