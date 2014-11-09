@@ -95,5 +95,7 @@ function toggleMenu(e) {
 
 
   $(window).on('click', toggleMenu);
+  $('.responsive-menu-link').on('click', toggleMenu);
+
 
 
