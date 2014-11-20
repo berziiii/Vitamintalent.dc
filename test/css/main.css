@@ -170,6 +170,10 @@ h4 {
 	visibility: hidden;
 }
 
+.none {
+	display: none;
+}
+
 .title-bar {
 	width: 100%;
 	z-index: 1000;
@@ -452,6 +456,7 @@ a.partner:hover, a.color-green:hover {
 	margin-left: -50px;
 	background-color: #00a798;
 	text-align: center;
+	border: 2px solid #fff;
 	padding-top: 10px;
 }
 
@@ -490,6 +495,7 @@ a.partner:hover, a.color-green:hover {
 .creative-blurb {
 	color: black;
 	font-family: 'MuseoSlab700';
+	overflow-y: auto;
 }
 
 .open {
@@ -838,12 +844,12 @@ a.interested:hover {
 	}
 
 	.creative-blurb-container {
-		height: 500px;
+		height: 600px;
 	}
 
 	.creative-blurb {
-		font-size: 20pt;
-		height: 325px;
+		font-size: 17pt;
+		height: 435px;
 	}
 
 	.interested {
@@ -938,8 +944,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 20pt;
-		height: 325px;
+		font-size: 16pt;
+		height: 350px;
 	}
 
 	.interested {
@@ -1031,12 +1037,12 @@ a.interested:hover {
 	}
 
 	.creative-blurb-container {
-		height: 350px;
+		height: 400px;
 	}
 
 	.creative-blurb {
-		font-size: 16pt;
-		height: 175px;
+		font-size: 14pt;
+		height: 270px;
 	}
 
 	.interested {
@@ -1093,8 +1099,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 14pt;
-		height: 200px;
+		font-size: 13pt;
+		height: 270px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1146,8 +1152,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 13.5pt;
-		height: 200px;
+		font-size: 13pt;
+		height: 270px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1189,8 +1195,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 12.5pt;
-		height: 200px;
+		font-size: 11.5pt;
+		height: 275px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1220,8 +1226,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 12.5pt;
-		padding-bottom: 60px;
+		font-size: 11.5pt;
+		height: 270px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1259,8 +1265,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 12pt;
-		height: 200px;
+		font-size: 11pt;
+		height: 270px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1301,8 +1307,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 10.5pt;
-		height: 200px;
+		font-size: 11pt;
+		height: 275px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1341,7 +1347,7 @@ a.interested:hover {
 
 	.creative-blurb {
 		font-size: 10.5pt;
-		height: 200px;
+		height: 280px;
 	}
 
 	.owl-prev, .owl-next {
@@ -1377,8 +1383,7 @@ a.interested:hover {
 
 	.creative-blurb {
 		font-size: 12pt;
-		height: 200px;
-
+		height: 270px;
 	}
 
 	.social-box {
@@ -1508,7 +1513,8 @@ a.interested:hover {
 	}
 
 	.creative-blurb {
-		font-size: 11pt;
+		font-size: 11.5pt;
+		height: 275px;
 	}
 
 	.creatives-container {
@@ -1845,8 +1851,13 @@ a.interested:hover {
     	margin-bottom: 35px;
     }
 
-    .creative-intro, .creative-title {
+    .creative-intro {
     	font-size: 25pt;
+    }
+
+    .creative-title {
+    	font-size: 20pt;
+		margin-top: -20px;
     }
 
     .creative-name {
@@ -1881,7 +1892,7 @@ a.interested:hover {
 
 	.creative-blurb {
 		font-size: 8pt;
-		height: 175px;
+		height: 185px;
 	}
 
 	.open-blurb {
@@ -2045,8 +2056,13 @@ a.interested:hover {
     	margin-bottom: 35px;
     }
 
-    .creative-intro, .creative-title {
+    .creative-intro {
     	font-size: 25pt;
+    }
+
+    .creative-title {
+    	font-size: 20pt;
+		margin-top: -20px;
     }
 
     .creative-name {
@@ -2080,7 +2096,8 @@ a.interested:hover {
     }
 
 	.creative-blurb {
-		font-size: 8pt;
+		font-size: 7.25pt;
+		height: 188px;
 	}
 
 	.open-blurb {

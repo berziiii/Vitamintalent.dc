@@ -67,12 +67,12 @@
 	}
 
 	.creative-blurb-container {
-		height: 500px;
+		height: 600px;
 	}
 
 	.creative-blurb {
-		font-size: 20pt;
-		height: 325px;
+		font-size: 17pt;
+		height: 435px;
 	}
 
 	.interested {
@@ -167,8 +167,8 @@
 	}
 
 	.creative-blurb {
-		font-size: 20pt;
-		height: 325px;
+		font-size: 16pt;
+		height: 350px;
 	}
 
 	.interested {
@@ -260,12 +260,12 @@
 	}
 
 	.creative-blurb-container {
-		height: 350px;
+		height: 400px;
 	}
 
 	.creative-blurb {
-		font-size: 16pt;
-		height: 175px;
+		font-size: 14pt;
+		height: 270px;
 	}
 
 	.interested {
@@ -322,8 +322,8 @@
 	}
 
 	.creative-blurb {
-		font-size: 14pt;
-		height: 200px;
+		font-size: 13pt;
+		height: 270px;
 	}
 
 	.owl-prev, .owl-next {
@@ -375,8 +375,8 @@
 	}
 
 	.creative-blurb {
-		font-size: 13.5pt;
-		height: 200px;
+		font-size: 13pt;
+		height: 270px;
 	}
 
 	.owl-prev, .owl-next {

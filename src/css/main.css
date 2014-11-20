@@ -172,6 +172,10 @@ h4 {
 	visibility: hidden;
 }
 
+.none {
+	display: none;
+}
+
 .title-bar {
 	width: 100%;
 	z-index: 1000;
@@ -456,6 +460,7 @@ a.partner:hover, a.color-green:hover {
 	margin-left: -50px;
 	background-color: #00a798;
 	text-align: center;
+	border: 2px solid #fff;
 	padding-top: 10px;
 }
 
@@ -494,6 +499,7 @@ a.partner:hover, a.color-green:hover {
 .creative-blurb {
 	color: black;
 	font-family: 'MuseoSlab700';
+	overflow-y: auto;
 }
 
 .open {

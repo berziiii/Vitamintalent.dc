@@ -48,7 +48,8 @@
 	}
 
 	.creative-blurb {
-		font-size: 11pt;
+		font-size: 11.5pt;
+		height: 275px;
 	}
 
 	.creatives-container {
@@ -385,8 +386,13 @@
     	margin-bottom: 35px;
     }
 
-    .creative-intro, .creative-title {
+    .creative-intro {
     	font-size: 25pt;
+    }
+
+    .creative-title {
+    	font-size: 20pt;
+		margin-top: -20px;
     }
 
     .creative-name {
@@ -421,7 +427,7 @@
 
 	.creative-blurb {
 		font-size: 8pt;
-		height: 175px;
+		height: 185px;
 	}
 
 	.open-blurb {
@@ -585,8 +591,13 @@
     	margin-bottom: 35px;
     }
 
-    .creative-intro, .creative-title {
+    .creative-intro {
     	font-size: 25pt;
+    }
+
+    .creative-title {
+    	font-size: 20pt;
+		margin-top: -20px;
     }
 
     .creative-name {
@@ -620,7 +631,8 @@
     }
 
 	.creative-blurb {
-		font-size: 8pt;
+		font-size: 7.25pt;
+		height: 188px;
 	}
 
 	.open-blurb {
