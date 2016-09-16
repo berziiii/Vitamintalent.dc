@@ -13,8 +13,9 @@ body {
 *:after,
 *:before {
 	-webkit-box-sizing: border-box;
-		 -moz-box-sizing: border-box;
-		      box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 ul {
@@ -58,7 +59,7 @@ h4 {
 }
 
 .col-50 {
-	width: 50%;
+	width: 49%;
 	padding-left: 2%;
 	padding-right: 2%;
 }
@@ -221,7 +222,7 @@ a.partner:hover, a.color-green:hover {
 
 .nav-image {
 	position: fixed;
-	width: 7em;
+	width: 6em;
 	top: .3rem;
 	left: 15%;
 	z-index: 10000;
@@ -714,7 +715,7 @@ a.interested:hover {
 
 .contact-social-container-4 {
 	background-color: #708d2c;
-} 
+}
 
 .contact-social-container-5 {
 	background-color: #647e28;
@@ -722,7 +723,7 @@ a.interested:hover {
 
 .contact-social-icon {
 	width: 92px;
-} 
+}
 
 .contact-social-container-1:hover, .contact-social-container-2:hover, .contact-social-container-3:hover, .contact-social-container-4:hover, .contact-social-container-5:hover {
 	opacity: 0.8;
